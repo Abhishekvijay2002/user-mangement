@@ -5,7 +5,7 @@ const userRoutes = require('./routes/userRoutes');
 connectDB();
 
 const app = express();
-app.use(express.json()); // Using built-in JSON parser instead of body-parser
+app.use(express.json()); 
 
 app.use('/', userRoutes);
 
